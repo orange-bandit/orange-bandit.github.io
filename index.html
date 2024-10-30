@@ -32,6 +32,7 @@
     <!-- Custom styles for this template -->
      <!-- Bootstrap -->
     <link href="bootstrap/cover.css" rel="stylesheet">
+    <link href="bootstrap/carousel.rtl.css" rel="stylesheet">
     
 
     <!-- Others -->
@@ -49,22 +50,79 @@
       </a>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="html/sign-in.html">Sign-in</a>
+        <a class="nav-link"  href="html/features.html">Features</a>
+        <a class="nav-link" href="html/contact.html">Contact</a>
+
       </nav>
     </div>
   </header>
 
   <main class="px-3">
-    <h1>orangeBandit is good.</h1>
-    <p class="lead">orangeBandit has been doing the deeds since the days of our forefathers, and we are still commited to deliverying a 99% succesrate on all contracts. we are the best of the best. .</p>
-    <p class="lead">
-      <a href="html/sign-in.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign in</a>
-    </p>
+    <!-- carousel code-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- carousel item-->
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>عنوان المثال.</h1>
+            <p>تشير الدراسات الإحصائية حسب الجمعية الأمريكية للغات بأن الإقبال على العربية زاد %126 في الولايات المتحدة الأمريكية وحدها بين عامي 2002 و2009م.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- carousel item-->
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>عنوان مثال آخر.</h1>
+            <p>حسب المجلس الثقافي البريطاني فإن تعليم الإنجليزية داخل بريطانيا يسهم في تعزيز اقتصادها بما يتجاوز ملياري جنيه سنوياً، كما أنه وفر أكثر من 26 ألف وظيفة.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">أعرف أكثر</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- carousel item-->
+        
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>واحد أكثر لقياس جيد.</h1>
+            <p>الإحصاءات لحجم الاستثمار اللغوي خارج بريطانيا تتفاوت من سنة لأخرى إلا أن المدير التنفيذي للمجلس الثقافي البريطاني إدي بايرز يرى أن استثمار تعليم الإنجليزية في الخارج لا يحسب على المستوى المالي فحسب بل على المستوى السياسي أيضاً.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">تصفح المعرض</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
+  </div>
+
+    <div class="px-3 container">
+      <h1>orangeBandit is good.</h1>
+      <p class="lead">orangeBandit has been doing the deeds since the days of our forefathers, and we are still commited to deliverying a 99% succesrate on all contracts. we are the best of the best. .</p>
+      <p class="lead">
+        <a href="html/sign-in.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Sign in</a>
+      </p>
+   </div>
   </main>
 
   <footer class="mt-auto text-white-50">
-    <a href="../index.html" style="text-decoration: none; color: orange;"><h1 class="lead" style="text-align: right;">orangeBandit</h1></a>
+    <a href="#" style="text-decoration: none; color: orange;"><h1 class="lead" style="text-align: right;">orangeBandit  2024</h1></a>
   </footer>
 </div>
 
