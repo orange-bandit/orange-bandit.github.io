@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="taste of orangeBandit">
-    <title>orangeBandit</title>
+    <meta name="description" content="orangeBandit calculator">
+    <title>orangeBandit-calculator</title>
 
     
 
@@ -36,6 +36,7 @@
 
     <!-- Others -->
     <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/calculator.css" rel="stylesheet">
 
 
   </head>
@@ -50,23 +51,47 @@
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link"  href="../index.html">Home</a>
         <a class="nav-link" href="sign-in.html">Sign-in</a>
-        <a class="nav-link active" aria-current="page" href="#">Features</a>
+        <a class="nav-link" href="features.html">Features</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="px-3">
-    <div class="showcase-board flex-column d-flex ">
-      <ol>
-        <li>
-          <a href="calculator.html">
-            calculator.html
-          </a>
-        </li>
-      </ol>
+  <main class="screen"`>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="buttons">
+          
+          
+          
+          
+          
+          
+          <button class="operatorButton" id="add" onclick="appendToDisplay('+')">+</button>
+          <button id="number7" onclick="appendToDisplay('7')">7</button>
+          <button id="number8" onclick="appendToDisplay('8')">8</button>
+          <button id="number9" onclick="appendToDisplay('9')">9</button>
+
+          <button class="operatorButton" id="subtract" onclick="appendToDisplay('-')">-</button>
+          <button id="number4" onclick="appendToDisplay('4')">4</button>
+          <button id="number5" onclick="appendToDisplay('5')">5</button>
+          <button id="number8" onclick="appendToDisplay('6')">6</button>
+
+          <button class="operatorButton" id="multiply" onclick="appendToDisplay('*')">*</button>
+          <button id="number5" onclick="appendToDisplay('1')">1</button>
+          <button id="number5" onclick="appendToDisplay('2')">2</button>
+          <button id="number5" onclick="appendToDisplay('3')">3</button>
+
+          <button class="operatorButton" id="divide" onclick="appendToDisplay('/')">/</button>
+          <button id="number0" onclick="appendToDisplay('0')">0</button>
+          <button id="decimal" onclick="appendToDisplay()">.</button>
+          <button id="equal" onclick="calculate()">=</button>
+          
+          <button class="operatorButton" id="clear" onclick="clearDisplay()">C</button>
+          
+        </div>
+
     </div>
-    
   </main>
 
   <footer class="mt-auto text-white-50">
@@ -79,4 +104,6 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</html>
+  <script src="../js/calculator.js" crossorigin="anonymous"></script>
+  </html>
+
